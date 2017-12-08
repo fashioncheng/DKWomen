@@ -1,0 +1,448 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+
+#header {
+	width: 1920px;
+	height: 150px;
+}
+
+#headerLogo {
+	width: 1920px;
+	height: 80px;
+	background: #f9f9f9;
+}
+
+#headerLogo img {
+	position: relative;
+	left: 850px;
+	top: 20px;
+}
+
+#headerNav {
+	width: 1920px;
+	height:65px;
+	line-height: 60px;
+	background: white;
+}
+
+#headerNav li {
+	width: 100px;
+	text-align: center;
+	list-style: none;
+	float: left;
+	margin-right: 100px;
+	color: #999999;
+	
+}
+#headerNav li a{
+	text-decoration: none;
+	color: darkgrey;
+	
+}
+#headerNav li a:hover{
+	color:#ffc001 ;
+}
+
+#headerNav li:hover {
+	color: #ffc001;
+	border-bottom: 3px solid #ffc001;
+}
+
+#headerNavText {
+	margin-left: 500px;
+}
+
+
+/*主题区域*/
+
+#mian {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#mianBanner {
+	width: 100%;
+	height: 820px;
+	position: relative;
+}
+
+#dian {
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	display: inline-block;
+	background: #FFC001;
+	position: absolute;
+	bottom: 15px;
+	left: 950px;
+}
+
+#dian2 {
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	display: inline-block;
+	background: white;
+	position: absolute;
+	bottom: 15px;
+	left: 1000px;
+}
+
+#mianBS {
+	width: 1180px;
+	height: 690px;
+	margin: 0 auto;
+	margin-top: 80px;
+	border: 0px solid rosybrown;
+}
+
+#mainBSLeft {
+	width: 605px;
+	height: 690px;
+	float: left;
+}
+
+#mainBSRight {
+	width: 550px;
+	height: 690px;
+	border: 0px solid orangered;
+	float: left;
+	margin-left: 23px;
+}
+
+#mainBSRightImg {
+	width: 557px;
+	height: 400px;
+}
+
+#mainBSRightText li a {
+	text-decoration: none;
+	font-family: "宋体";
+	font-size: 40px;
+	list-style: none;
+	color: white;
+	position: relative;
+	bottom: 250px;
+	left: 180px;
+}
+
+#mainBSRightText li {
+	list-style: none;
+}
+
+#mainBSRightText2 {
+	width: 550px;
+	height: 220px;
+	border: 0px solid red;
+	margin-top: -85px;
+	border-left: 2px solid lightgray;
+}
+
+#mainBSRightText2 li {
+	list-style: none;
+}
+
+#mainBSRightText2 li {
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #868686;
+	padding-bottom: 8px;
+}
+
+#ul {
+	position: relative;
+	left: 30px;
+	top: 20px;
+}
+/*主体区域3*/
+#mianNEWImg{
+	width: 100%;
+	height: 456px;
+	margin-top: 80px;
+
+
+}
+#mianNEWText{
+	position: relative;
+	top: -350px;
+	left: 850px;
+}
+#mianNEWText li{
+	list-style: none;
+	color: white;
+	font-size: 30px;
+	padding-bottom: 5px;
+}
+#jiantou{
+	position: relative;
+	left: 70px;
+	top: 50px;
+}
+/*主体区域4*/
+#mianKeywords{
+	width: 1180px;
+	height: 640px;
+	
+	margin: 0 auto;
+}
+#mianKeywordsLeft li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+#mianKeywordsLeft li a{
+	margin-right: 5px;
+}
+#mianKeywordsText{
+	margin-left: 100px;
+}
+#mianKeywordsImgLeft{
+ float: left;
+ margin-left: 100px;
+ margin-top: -30px;
+}
+#mianKeywordsImgRight{
+ float: left;
+}
+
+#mianKeywordsImgRight img{
+	margin-left: -10px;
+	margin-top: -70px;
+
+}
+#mianKeywordsKuang{
+	width: 425px;
+	height: 425px;
+	border: 1px solid lightgray;
+	margin-left: 400px;
+	margin-top: 150px;
+}
+#GuessYouLike li{
+	list-style: none;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+#GuessYouLike{
+	width: 400px;
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+	top: 150px;
+	left: 100px;
+}
+#GuessYouLikeShow{
+	width: 1180px;
+	height: 1475px;
+	margin: 0 auto;
+	border: 0px solid tomato;
+	margin-top: 200px;
+	
+	
+}
+#GuessKuang{
+	width: 460px;
+	height: 600px;
+	border: 1px solid darkgrey;
+	margin-left: 300px;
+}
+#GuessKuang img{
+	position: relative;
+	left: 300px;
+	top: 40px;
+	
+}
+#GuessImg img{
+	width: 640px;
+	height: 715px;
+	position: relative;
+	bottom: 345px;
+	z-index: 2;
+}
+
+#GuessKuangTow{
+	width: 670px;
+	height: 650px;
+	border: 1px solid darkgrey;
+	position: relative;
+	bottom: 500px;
+	left: 300px;
+}
+#GuessKuangTow img{
+	position: relative;
+	left: 300px;
+}
+/*主体区域7*/
+#fashion{
+	width: 1180px;
+	height: 750px;
+	margin: 0 auto;
+	border: 0px solid red;
+	margin-top: 30px;
+}
+#fashionText{
+	width: 1180px;
+	height: 750px;
+}
+#fashionText ul{
+	margin-left: 130px;
+	list-style: none;
+}
+#fashionText ul img{
+	position: relative;
+	top: -5px;
+	left: 100px;
+	
+}
+#fashionImg{
+	width: 587px;
+	height: 588px;
+	
+	position: relative;
+	left: 550px;
+	bottom: 670px;
+	border-top: 7px solid #eaedee;	
+	border-left: 10px solid #eaedee;
+}
+#fashionImg img{
+	position: relative;
+	top: 50px;
+	
+}
+#fashionImgTow{
+	width: 406px;
+	height: 350px;
+	border: 10px solid black ;
+	border-right: 0;
+	border-top: 0;
+	position: relative;
+	bottom: 970px;
+	left: 200px;
+}
+/*主体区域8*/
+
+#SHOPNEW{
+	width: 100%;
+	height: 728px;
+	background: olive;
+	position: relative;
+	top: 150px;
+}
+#SHOPNEWBOX{
+	width: 100%;
+	height: 728px;
+}
+#SHOPNEW li{
+	list-style: none;
+	color: white;
+	margin-bottom: 10px;
+	
+}
+#SHOPNEW ul{
+	position: absolute;
+	bottom: 150px;
+	left: 200px;
+}
+#text{
+	width:240px;
+	height: 70px;
+	display: inline-block;
+	border: 1px solid white;
+	text-align: center;
+	line-height:70px ;
+}
+#aestheticism{
+	width:420px;
+	height: 100px;
+	
+	margin: 0 auto;
+	/*position: relative;
+	top: 235px;*/
+	margin-top: 235px;
+	
+}
+#aestheticism li{
+	list-style: none;
+	margin-bottom: 20px;
+}
+#mainTen{
+	width: 1180px;
+	height: 486px;
+	border: 0px solid red;
+	margin: 0 auto;
+	margin-top: 90px;
+    position: relative;
+}
+#img2{
+	position: absolute;
+	top: 0;
+	left: 385px;
+}
+#img3{
+	position: absolute;
+	bottom: 1px;
+	left: 385px;
+}
+#img4{
+	position: absolute;
+	right: 0;
+	
+}
+/*底部区域*/
+
+
+#footer{
+	width: 100%;
+	height: 200px;
+	background: #292929;
+	position: absolute;
+	top: 7550px;
+}
+
+#footerLogo {
+	width: 1920px;
+	height: 80px;
+	background: #292929;
+}
+
+#footerLogo img {
+	position: relative;
+	left: 840px;
+	top: 20px;
+}
+
+#footerNav {
+	width: 1920px;
+	height:65px;
+	line-height: 60px;
+	background: #292929;
+	
+}
+
+#footerNav li {
+	width: 100px;
+	list-style: none;
+	float: left;
+	margin-right: 100px;
+	color: #999999;
+	
+}
+#footerNav li a{
+	text-decoration: none;
+	color: #c1c0c1;
+	font-size: 14px;
+	
+	
+}
+#footerNavText {
+	margin-left: 500px;
+}
+#copyright{
+	font-size: 12px;
+	color: dimgrey;
+	margin-left: 855px;
+	
+}
+
