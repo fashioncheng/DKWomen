@@ -1,0 +1,181 @@
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#logo {
+	width: 1920px;
+	height: 80px;
+	text-align: center;
+	background: #fafafa;
+	margin-top: 0px;
+}
+
+#logo img {
+	width: 222px;
+	height: 42px;
+	margin-top: 19px;
+	position: absolute;
+	left: 850px;
+}
+
+#nav {
+	width: 1920px;
+	height: 65px;
+	margin: 0 auto;
+	position: absolute;
+	top: 80px;
+}
+
+#nav ul {
+	padding: 0;
+	text-align: center;
+	position: absolute;
+	left: 500px;
+	margin: 0;
+}
+
+#nav li {
+	list-style: none;
+	float: left;
+	padding-top: 15px;
+	width: 100px;
+	height: 35px;
+	text-align: center;
+	margin-right: 100px;
+}
+
+#nav a {
+	display: block;
+	width: 100px;
+	height: 40px;
+	text-decoration: none;
+	color: #999;
+	font-size: 20px;
+}
+
+#nav li a:hover {
+	color: #ffc001;
+	border-bottom: 3px solid #ffc001;
+}
+
+#banner {
+	width: 100%;
+	height: 820px;
+	position: absolute;
+	top: 145px;
+}
+#center {
+	width: 1180px;
+	height: 900px;
+	margin: 0 auto;
+	/*background: yellow;*/
+	position: absolute;
+	top: 1015px;
+	left: 361px;
+}
+#centerTop{
+	width: 100%;
+	height: 105px;
+	text-align: center;
+}
+#centerTop1{
+	width: 100%;
+	height: 800px;
+	/*background: yellow;*/
+	position: absolute;
+	top: 75px;
+}
+#centerTop2{
+	width: 100%;
+	height: 1px;
+	background: #E5E5E5;
+	margin-top:1px ;
+	position: absolute;
+	top: -2px;
+}
+#centerTop3{
+	margin-top: 20px;
+
+}
+#centerTop4{
+	width: 720px;
+	height: 300px;
+	/*background: orange;*/
+	position: absolute;
+	top: 120px;
+	right: 10px;
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#centerTop5{
+	width: 100%;
+	height: 1px;
+	background: #E5E5E5;
+	margin-top:1px ;
+	position: absolute;
+	top: 730px;
+}
+#centerTop6{
+	position: absolute;
+	top: 735px;
+}
+
+#bottom {
+	width: 1920px;
+	height: 200px;
+	position: absolute;
+	background: black;
+	top: 1810px;
+	text-align: center;
+}
+
+#bottom img {
+	padding-top: 30px;
+}
+
+#bottom_B ul {
+	padding: 0;
+	text-align: center;
+	position: absolute;
+	top: 80px;
+	left: 500px;
+	margin: 0;
+}
+
+#bottom_B li {
+	list-style: none;
+	float: left;
+	padding-top: 15px;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	margin-right: 100px;
+}
+
+#bottom_B a {
+	text-decoration: none;
+	color: #999;
+	font-size: 16px;
+}
+
+#bottom_B1 {
+	width: 870px;
+	height: 1px;
+	background: #999;
+	margin-top: 70px;
+	margin-left: 525px;
+}

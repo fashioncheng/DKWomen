@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/Products_one.css" />
+		<link rel="stylesheet" type="text/css" href="css/bulabula.css" />
+
+	</head>
+
+	<body>
+		<div class="header">
+
+			<img src="img/image/logo.png" />
+
+		</div>
+		<!--菜单-->
+		<div class="menu">
+			<ul>
+				<li>
+					<a href="../Homepage/homePage.html">首页</a>
+				</li>
+				<li>
+					<a href="../IntroducePrefecture/Introduction.html">品牌介绍</a>
+				</li>
+				<li>
+					<a id="menuText" href="../Product area/Products_one.html">产品专区</a>
+				</li>
+				<li>
+					<a href="../fashion information/news.html">时尚资讯</a>
+				</li>
+				<li>
+					<a href="../contact us/service.html">联系我们</a>
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="banner">
+
+			<img id="d1" src="img/image/c-banner-1.jpg" onmouseover="stopTu()" onmouseout="startTu()">
+			<div class="bannerLi">
+
+				<ul>
+					<li id="li1" onmouseover="tingTu(1,this)" onmouseout="dongTu()"></li>
+					<li id="li2" onmouseover="tingTu(2,this)" onmouseout="dongTu()"></li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			window.onload = init;
+			//i表示显示的第几张图片
+			var i = 1;
+			var dingshiqi;
+
+			function init() {
+				var obj = document.getElementById("li1");
+				obj.style.background = "orange";
+				dingshiqi = window.setInterval("tupian()", 3000);
+			}
+			//让图片自动切换的函数
+			function tupian() {
+				i++;
+				if(i > 2) {
+					i = 1;
+				}
+				//获取了img对象
+				var obj = document.getElementById("d1");
+				//修改img对象的src属性
+				obj.src = "img/image/c-banner-" + i + ".jpg";
+				//再去修改li标签的背景颜色
+				ys();
+				var yanse = document.getElementById("li" + i);
+				yanse.style.background = "orange";
+			}
+			//鼠标放到图片上停止图片自动切换的函数
+			function stopTu() {
+				window.clearInterval(dingshiqi);
+			}
+			//鼠标离开图片让图片自动切换的函数
+			function startTu() {
+				dingshiqi = window.setInterval("tupian()", 3000);
+			}
+			//鼠标放到li标签上显示对应图片的函数
+			function tingTu(n, m) {
+				i = n;
+				var obj = document.getElementById("d1");
+				obj.src = "img/image/c-banner-" + n + ".jpg";
+				//把所有的li标签的背景颜色变成白色
+				ys();
+				window.clearInterval(dingshiqi);
+				m.style.background = "orange";
+			}
+			//鼠标离开li标签让图片继续自动切换
+			function dongTu() {
+				dingshiqi = window.setInterval("tupian()", 3000);
+			}
+			//清除所有标签的背景颜色
+			function ys() {
+				for(var j = 1; j <= 2; j++) {
+					var Allobj = document.getElementById("li" + j);
+					Allobj.style.background = "white";
+				}
+			}
+		</script>
+
+		<div class="main_Hot">
+			<div class="hotSale">
+				<div class="lineLeft"></div>
+				<div class="hotText">
+					<span id="hotTextOne">热卖专区   </span><br />
+					<span id="hotTextTwo">HOT &nbsp; SALE	
+        		</span>
+
+				</div>
+				<div class="lineRight"></div>
+			</div>
+			<br />
+			<div class="hotSale_Img">
+				<div class="one">
+					<div class="hotSale_Img_top animated">
+						<a href="#"><img src="img/image/c-1.jpg" /><br /><span>
+            		高跟鞋女细跟真丝布女鞋
+            	       </span></a>
+					</div>
+				</div>
+				<div class="two">
+					<div class="hotSale_Img_top animated">
+						<a href="#"><img src="img/image/c-2.jpg" /><br /><span>
+            		性感尖头浅口细高跟女鞋
+            	</span></a>
+					</div>
+				</div>
+				<div class="thr">
+					<div class="hotSale_Img_top animated">
+						<a href="#"><img src="img/image/c-3.jpg" /><br /><span>
+            		欧美时尚尖头高跟鞋
+            	    </span></a>
+					</div>
+				</div>
+				<div class="for">
+					<div class="hotSale_Img_bottom animated">
+						<a href="#"><img src="img/image/c-4.jpg" /><br /><span>
+            		性感尖头单鞋浅口细跟女鞋
+            	     </span></a>
+					</div>
+				</div>
+				<div class="fiv">
+					<div class="hotSale_Img_bottom animated">
+						<a href="#"><img src="img/image/c-5.jpg" /><br /><span>
+            		性感尖头高跟鞋女细跟浅口单鞋
+            	</span></a>
+					</div>
+				</div>
+				<div class="six">
+					<div class="hotSale_Img_bottom animated">
+						<a href="#"><img src="img/image/c-6.jpg" /><br /><span>
+            		拼色羊毛尖头单鞋女浅口高跟鞋
+            	</span></a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="main_Fashion_Rev_img a1">
+			<div class="animated">
+				<img src="img/image/c-7-1.png">
+			</div>
+
+		</div>
+		<!--产品分类-->
+		<div class="main_Pro">
+
+			<div class="lineLeft"></div>
+			<div class="hotText">
+				<span id="hotTextOne">产品分类 </span><br />
+				<span id="proTextTwo">Product &nbsp; Category	
+        		</span>
+
+			</div>
+
+			<div class="lineRight"></div>
+
+		</div>
+
+		<div class="main_Pro_Cat">
+
+			<div class="main_Pro_Cat_Img_lot">
+				<div class="a2">
+					<div class="main_Pro_Cat_Img1 col animated">
+						<div class="main_Pro_Cat_Img_text">
+							<a class="main_Pro_Cat_Img_text_a" href="products_two.html">靴 &nbsp;子</a>
+						</div>
+					</div>
+				</div>
+				<div class="a21">
+					<div class="main_Pro_Cat_Img2 col animated">
+						<div class="main_Pro_Cat_Img_text">
+							<a class="main_Pro_Cat_Img_text_a" href="products_3.html">高&nbsp;跟&nbsp;鞋</a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="a22">
+					<div class="main_Pro_Cat_Img3 col animated">
+						<div class="main_Pro_Cat_Img_text">
+							<a class="main_Pro_Cat_Img_text_a" href="products_4.html">经&nbsp;典&nbsp;款</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="a23">
+					<div class="main_Pro_Cat_Img4 col animated">
+						<div class="main_Pro_Cat_Img_text">
+							<a class="main_Pro_Cat_Img_text_a" href="products_5.html">单&nbsp;鞋</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="main_Pro_Cat_Img_big">
+				<div class="a3">
+					<div class="main_Pro_Cat_Img_big_left animated">
+						<img src="img/image/c-14.jpg" width="640px" height="917px" />
+
+					</div>
+				</div>
+				<div class="a31">
+					<div class="main_Pro_Cat_Img_big_right animated">
+						<img src="img/image/c-15.jpg" width="741px" height="980px" />
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="main_Fashion_Per">
+			<div class="main_Fashion_Per_img a4">
+				<div class="animated">
+					<img src="img/image/c-16-1.png" width="" />
+				</div>
+
+			</div>
+			<div class="main_Fashion_per_logo">
+				<div class="lineLeft per"></div>
+				<div class="perText">
+					<span id="perTextOne">潮流速递   </span><br />
+					<span id="perTextTwo">The &nbsp; tide &nbsp;of &nbsp;
+						express&nbsp; delivery
+        		</span>
+
+				</div>
+				<div class="lineRight per1"></div>
+			</div>
+			<div class="fashion_show">
+				<div class="show_one b1">
+					<div class="animated">
+						<img src="img/image/c-17.jpg" width="385px" height="322px" />
+					</div>
+
+				</div>
+
+				<div class="show_two b2">
+					<div class="animated">
+						<img src="img/image/c-18.jpg" width="393px" height="686px" />
+					</div>
+
+				</div>
+				<div class="show_three b3">
+					<div class="animated">
+						<img src="img/image/c-19.jpg" width="385px" height="322px" />
+					</div>
+
+				</div>
+				<div class="show_four b4">
+					<div class="animated">
+						<img src="img/image/c-20.jpg" width="383px" height="686px" />
+					</div>
+
+				</div>
+				<div class="show_five b5">
+					<div class="animated">
+						<img src="img/image/c-21.jpg" width="392px" height="322px" />
+					</div>
+
+				</div>
+				<div class="show_six b6">
+					<div class="animated">
+						<img src="img/image/c-22.jpg" width="382px" height="686px" />
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		<!--底部盒子-->
+		<div id="footer" class="c1">
+			<!--logo盒子-->
+			<div class="animated">
+				<div id="footerLogo">
+					<img src="img/image/logo.png" />
+				</div>
+				<!--导航盒子-->
+				<div id="footerNav">
+					<ul id="footerNavText">
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">品牌介绍</a>
+						</li>
+						<li>
+							<a href="#">产品专区</a>
+						</li>
+						<li>
+							<a href="#">时尚资讯</a>
+						</li>
+						<li>
+							<a href="#">联系我们</a>
+						</li>
+					</ul>
+				</div>
+				<div class="foot_line">
+
+				</div>
+				<a id="copyright">@此网页版权所有DK公司</a>
+			</div>
+
+		</div>
+
+	</body>
+
+	<!--左右滑入-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/bulabula.js"></script>
+	<script>
+		function ani(idname, type1, type2) {
+			if(($("." + idname).offset().top - $(window).scrollTop()) < $(window).height()) {
+				$("." + idname).find("div").eq(0).addClass(type1);
+				$("." + idname).find("div").eq(1).addClass(type2);
+			};
+			$(window).scroll(function() {
+				if(($("." + idname).offset().top - $(window).scrollTop()) < $(window).height()) {
+					$("." + idname).find("div").eq(0).addClass(type1);
+					$("." + idname).find("div").eq(1).addClass(type2);
+				};
+			});
+
+		};
+		ani("one", "bounceInUp");
+		ani("two", "bounceInUp");
+		ani("thr", "bounceInUp");
+		ani("for", "fadeInDownBig");
+		ani("fiv", "fadeInDownBig");
+		ani("six", "fadeInDownBig");
+		ani("a1", "bounceInLeft");
+		ani("a2", "bounceInRight");
+		ani("a21", "bounceInRight");
+		ani("a22", "bounceInLeft");
+		ani("a23", "bounceInLeft");
+		ani("a3", "bounceInLeft");
+		ani("a31", "bounceInRight");
+		ani("a4", "bounceInLeft");
+		ani("b1", "bounceInLeft");
+		ani("b2", "bounceInUp");
+		ani("b3", "bounceInRight");
+		ani("b4", "bounceInLeft");
+		ani("b5", "bounceInUp");
+		ani("b6", "bounceInRight");
+		ani("c1", "bounceInUp");
+	</script>
+
+</html>

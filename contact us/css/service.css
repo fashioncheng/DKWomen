@@ -41,18 +41,21 @@ body {
 	float: left;
 	padding-top: 15px;
 	width: 100px;
-	height: 40px;
+	height: 35px;
 	text-align: center;
 	margin-right: 100px;
 }
 
 #nav a {
+	display: block;
+	width: 100px;
+	height: 40px;
 	text-decoration: none;
 	color: #999;
 	font-size: 20px;
 }
 
-#nav li:hover {
+#nav li a:hover {
 	color: #ffc001;
 	border-bottom: 3px solid #ffc001;
 }

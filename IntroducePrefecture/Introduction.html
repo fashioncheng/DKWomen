@@ -5,7 +5,9 @@
 		<meta charset="utf-8" />
 		<title>产品介绍</title>
 		<link rel="stylesheet" type="text/css" href="css/Introduction.css" />
-		
+		<link rel="stylesheet" type="text/css" href="css/Introduction1.css" />
+		<link rel="stylesheet" type="text/css" href="css/Introduction2.css" />
+
 	</head>
 
 	<body>
@@ -17,31 +19,38 @@
 			<div id="nav">
 				<ul>
 					<li>
-						<a href="#">首页</a>
+						<a href="../Homepage/homePage.html">首页</a>
 					</li>
 					<li>
-						<a href="#">品牌介绍</a>
+						<a href="../IntroducePrefecture/Introduction.html">品牌介绍</a>
 					</li>
 					<li>
-						<a href="#">产品专区</a>
+						<a href="../Product area/Products_one.html">产品专区</a>
 					</li>
 					<li>
-						<a href="#">时尚资讯</a>
+						<a href="../fashion information/news.html">时尚资讯</a>
 					</li>
 					<li>
-						<a href="#">联系我们</a>
+						<a href="../contact us/service.html">联系我们</a>
 					</li>
 				</ul>
 			</div>
-			<div id="banner">
+			<!--碎花图片-->
+			<!--<div id="banner">
 				<img src="img/b-banner.png" />
+			</div>-->
+			<div id="popup">
+				<div class="img-flex"></div>
 			</div>
 
 		</div>
 		<div id="center">
-			<div id="centerTopL">
-				<img src="img/b-1.jpg" />
-				<div id="centerTopR">
+			<!--左右滑入-->
+			<div id="centerTopL" class="one">
+				<div id="centerTopL1" class="animated">
+					<img src="img/b-1.jpg" />
+				</div>
+				<div id="centerTopR" class="animated">
 					<div id="centerTopR1">
 						<h3>精湛工艺</h3>
 						<spen style="font-size: 12px;">E &nbsp;X &nbsp;Q &nbsp;U &nbsp;I &nbsp;S &nbsp;I &nbsp;T &nbsp;E &nbsp;C &nbsp;R &nbsp;A &nbsp;F &nbsp;T</spen> <br /> _______ <br /><br />
@@ -55,24 +64,27 @@
 					</div>
 				</div>
 			</div>
-			<div id="centerTop2">
-				<div id="centerTop2L">
-					<div id="centerTop2L1">
+
+			<div id="centerTop2" class="two">
+				<div id="centerTop2L" class="animated">
+					<span id="centerTop2L1">
 						<h3>品质保障</h3>
 						<spen style="font-size: 12px;">A &nbsp;S &nbsp;S &nbsp;U &nbsp;R &nbsp;A &nbsp;N &nbsp;C &nbsp;E &nbsp;</spen> <br /> _______ <br /><br />
 						<span style="font-size: 16px;">品牌将技术创新和经典风格相结合，打造 </span><br />
-						<span style="font-size: 16px;">
+					<span style="font-size: 16px;">
 							出完美的一次性设计。
 						</span>
-					</div>
+					</span>
 				</div>
-				<div id="centerTop2R">
+				<div id="centerTop2R" class="animated">
 					<img src="img/b-2.jpg" />
 				</div>
 			</div>
-			<div id="centerTop3">
-				<img src="img/b-3.jpg" />
-				<div id="centerTop3R">
+			<div id="centerTop3" class="thr">
+				<div class="animated">
+					<img src="img/b-3.jpg" />
+				</div>
+				<div class="animated" id="centerTop3R">
 					<div id="centerTop3R1">
 
 						<h3>品牌灵魂</h3>
@@ -87,66 +99,132 @@
 					</div>
 				</div>
 			</div>
-			<div id="centerTop4">
+			<div id="centerTop4" class="for">
 
-				<img id="ct1" src="img/b-4.jpg" />
-				<img id="ct2" src="img/b-5.jpg" />
-				<div id="centerTop4R">
-					<h3>过去&nbsp;&nbsp;现在&nbsp;&nbsp;未来</h3>
-					<spen style="font-size: 12px;">P &nbsp;A &nbsp;S &nbsp;T &nbsp;&nbsp;P &nbsp;R &nbsp;E &nbsp;S &nbsp;N &nbsp;T &nbsp;&nbsp;F &nbsp;U &nbsp;T &nbsp;U &nbsp;R &nbsp;E</spen> <br /> _______ <br /><br />
-					<span style="font-size: 16px;">时至今日，品牌依然能打造出梦想中的鞋帽箱包，沐浴旅行箱，沙滩套装。 </span><br />
-					<span style="font-size: 16px;">
+				<div class="animated">
+					<img id="ct1" src="img/b-4.jpg" />
+				</div>
+				<div class="animated">
+					<img id="ct2" src="img/b-5.jpg" />
+				</div>
+				<div class="fiv">
+
+					<div id="centerTop4R" class="animated">
+						<h3>过去&nbsp;&nbsp;现在&nbsp;&nbsp;未来</h3>
+						<spen style="font-size: 12px;">P &nbsp;A &nbsp;S &nbsp;T &nbsp;&nbsp;P &nbsp;R &nbsp;E &nbsp;S &nbsp;N &nbsp;T &nbsp;&nbsp;F &nbsp;U &nbsp;T &nbsp;U &nbsp;R &nbsp;E</spen> <br /> _______ <br /><br />
+						<span style="font-size: 16px;">时至今日，品牌依然能打造出梦想中的鞋帽箱包，沐浴旅行箱，沙滩套装。 </span><br />
+						<span style="font-size: 16px;">
 							旅行依然是品牌的核心主题。工艺精湛，注重细节依然是品牌的特色。
 						</span>
+					</div>
 				</div>
-
 			</div>
-			<div id="centerTop5">
-				<br />
-				<br />
-				<h3>品牌创始人</h3>
-				<span style="font-size: 12px;">
+			<div id="centerTop5" class="a1">
+				<div class="animated">
+					<br />
+					<br />
+					<h3>品牌创始人</h3>
+					<span style="font-size: 12px;">
 				B &nbsp;R &nbsp;A &nbsp;N &nbsp;D &nbsp;&nbsp;F &nbsp;O &nbsp;U &nbsp;N &nbsp;D &nbsp;E &nbsp;R
 			</span><br/> _____
-			</div>
-			<div id="centerTop6">
-				<a href="#"><img src="img/b-6.jpg" /></a>
-				<a href="#"><img src="img/b-7.jpg" /></a>
-				<a href="#"><img src="img/b-8.jpg" /></a>
-				<a href="#"><img src="img/b-9.jpg" /></a>
-
-			</div>
-
-		</div>
-		<div id="bottom">
-			<img src="img/bottom-logo.png" />
-			<div id="bottom_B">
-				<ul>
-					<li>
-						<a href="#">首页</a>
-					</li>
-					<li>
-						<a href="#">品牌介绍</a>
-					</li>
-					<li>
-						<a href="#">产品专区</a>
-					</li>
-					<li>
-						<a href="#">时尚资讯</a>
-					</li>
-					<li style="margin: 0;">
-						<a href="#">联系我们</a>
-					</li>
-				</ul>
-
-			</div>
-			<div id="bottom_B1">
-				<div style="color: #999; font-size: 14px;padding-top:30px ;">
-					@此网页版权所有DK公司
 				</div>
 			</div>
+			<div id="centerTop6" class="a2">
+				<div class="animated" style="float: left;">
+					<a href="#"><img src="img/b-6.jpg" /></a>
+				</div>
+				<div class="a21">
+					<div class="animated" style="float: left;">
+						<a href="#"><img src="img/b-7.jpg" /></a>
+					</div>
+
+					<div class="animated" style="float: left;">
+						<a href="#"><img src="img/b-8.jpg" /></a>
+					</div>
+				</div>
+				<div class="a22">
+					<div class="animated" style="float: left;">
+						<a href="#"><img src="img/b-9.jpg" /></a>
+					</div>
+				</div>
+
+			</div>
 
 		</div>
+		<div id="bottom" class="a3">
+			<div class="animated">
+				<img src="img/bottom-logo.png" />
+				<div id="bottom_B">
+					<ul>
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">品牌介绍</a>
+						</li>
+						<li>
+							<a href="#">产品专区</a>
+						</li>
+						<li>
+							<a href="#">时尚资讯</a>
+						</li>
+						<li style="margin: 0;">
+							<a href="#">联系我们</a>
+						</li>
+					</ul>
+
+				</div>
+				<div id="bottom_B1">
+					<div style="color: #999; font-size: 14px;padding-top:30px ;">
+						@此网页版权所有DK公司
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
+
+	<!--碎片花-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/Introduction1.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			var fragmentConfig = {
+				container: '.img-flex', //显示容器
+				line: 10, //多少行
+				column: 24, //多少列
+				width: 1920, //显示容器的宽度
+				animeTime: 4500, //最长动画时间,图片的取值将在 animeTime*0.33 + animeTime*0.66之前取值 
+				img: 'img/b-banner.png' //图片路径
+			};
+			fragmentImg(fragmentConfig);
+		});
+	</script>
+
+	<!--左右滑入-->
+	<script>
+		function ani(idname, type1, type2) {
+			if(($("." + idname).offset().top - $(window).scrollTop()) < $(window).height()) {
+				$("." + idname).find("div").eq(0).addClass(type1);
+				$("." + idname).find("div").eq(1).addClass(type2);
+			};
+			$(window).scroll(function() {
+				if(($("." + idname).offset().top - $(window).scrollTop()) < $(window).height()) {
+					$("." + idname).find("div").eq(0).addClass(type1);
+					$("." + idname).find("div").eq(1).addClass(type2);
+				};
+			});
+
+		};
+		ani("one", "bounceInLeft", "bounceInRight");
+		ani("two", "bounceInLeft", "bounceInRight");
+		ani("thr", "bounceInLeft", "bounceInRight");
+		ani("for", "bounceInLeft", "bounceInRight");
+		ani("fiv", "bounceInLeft", "bounceInRight");
+		ani("a1", "fadeInDownBig", "fadeInDownBig");
+		ani("a2", "zoomInLeft");
+		ani("a21", "rotateInDownLeft","rotateInDownRight");
+		ani("a22", "zoomInRight");
+		ani("a3", "bounceInUp", "bounceInUp");
+	</script>
 
 </html>

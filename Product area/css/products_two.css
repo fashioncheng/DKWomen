@@ -1,0 +1,222 @@
+body{
+	margin: 0;
+	height: 0;
+	position: relative;
+}
+.header{
+	
+	width: 100%;
+	height: 80px;
+	margin: 0 auto;  
+	text-align: center;
+	line-height: 80px;
+	/*padding-top:19px;*/
+	position: relative;
+	
+}
+.header img{
+	position: relative;
+	top: 19px;
+}
+.menu{
+	height: 65px;
+	width: 1920px;
+	/*background: gray;*/
+	margin: 0 auto;
+	position: relative;
+	line-height: 60px;
+}
+.menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+    margin-left:620px ;	
+}
+.menu ul li{
+	float: left;
+	font-family: "微软雅黑";
+	color: #999999;
+	margin-right: 60px;
+	font-size: 18px;
+	position:relative;
+	/*top: 25px;*/
+	/*text-decoration: none;*/
+	width: 100px;
+	/*border-bottom: 1px solid black;*/
+	text-align: center;
+}
+
+
+.menu ul li a{
+	text-decoration: none;
+	color: #999999;
+}
+
+.menu li a:hover {
+	color: #ffc001;
+	border-bottom: 2px solid #ffc001 ;
+	width: 100px;
+	
+}
+#menuText{
+	color: #ffc001;
+	border-bottom: 2px solid #ffc001 ;
+	
+	
+}
+
+.banner ul li{
+	float: left;
+	list-style: none;
+	border: 1px solid yellow;
+	
+}
+
+.nav{
+	
+	
+	width: 1190px;
+	margin: 0 auto;
+	height: 1000px;
+	/*background: red;*/
+	position: relative;
+    top: 79px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.nav_ul{
+	
+ list-style: none;
+  margin-left: 30px;
+  
+	
+}
+
+.nav_text{
+	float: left;
+	font-size: 24px;
+	margin-right: 220px;
+}
+
+
+.nav_text a{
+	
+	text-decoration: none;
+	color: #808080;
+	
+	
+}
+
+.nav_line{
+	width: 1190px;
+	height: 1px;
+	background: #808080;
+	position: relative;
+	top: 52px;
+	
+}
+.from{
+	
+	position: relative;
+top: 45px;
+left: 40px;
+	
+}
+.from input{
+	background: url(img/image/d-search.jpg) no-repeat;
+	background-position-x: 190px;
+	background-position-y: 7px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+	width: 100%;
+	height: 200px;
+	background: #292929;
+	margin-top: 130px;
+	position: relative;
+	top: 2350px;
+}
+
+
+#footerLogo {
+	width: 100%;
+	height: 80px;
+	background: #292929;
+}
+
+
+#footerLogo img {
+	position: relative;
+	left: 840px;
+	top: 20px;
+}
+
+
+#footerNav {
+	width: 100%;
+	height:65px;
+	line-height: 60px;
+	background: #292929;
+	
+}
+
+
+#footerNav li {
+	width: 100px;
+	list-style: none;
+	float: left;
+	margin-right: 50px;
+	color: #999999;
+	
+}
+#footerNav li a{
+	text-decoration: none;
+	color: #c1c0c1;
+	font-size: 17px;
+	
+	
+}
+#footerNavText {
+	margin-left:600px;
+}
+#copyright{
+	font-size: 17px;
+	color: dimgrey;
+	margin-left: 875px;
+	
+}
+.foot_line{
+	
+	width: 810px;
+	height: 1px;
+	background: #c1c0c1;
+	position: relative;
+	left: 565px;
+}

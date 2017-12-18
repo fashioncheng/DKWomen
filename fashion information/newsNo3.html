@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>时尚资讯3</title>
+		<link rel="stylesheet" type="text/css" href="css/newsNo3.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Introduction2.css" />
+	</head>
+
+	<body>
+		<div id="head">
+
+			<div id="logo">
+				<img src="img/logo.png" />
+			</div>
+			<div id="nav">
+				<ul>
+					<li>
+						<a href="../Homepage/homePage.html">首页</a>
+					</li>
+					<li>
+						<a href="../IntroducePrefecture/Introduction.html">品牌介绍</a>
+					</li>
+					<li>
+						<a href="../Product area/products_one.html">产品专区</a>
+					</li>
+					<li>
+						<a href="../fashion information/news.html">时尚资讯</a>
+					</li>
+					<li>
+						<a href="../contact us/service.html">联系我们</a>
+					</li>
+				</ul>
+			</div>
+			<div id="banner">
+				<img src="img/h-banner.jpg" />
+			</div>
+			<div class="a2" style="z-index: 999; position: absolute; top: 600px;left: 470px;">
+				<div class="animated">
+					<img src="img/h-banner-1.png"/>
+				</div>
+				
+			</div>
+
+		</div>
+
+		<div id="center">
+			<div id="centerTop" class="one">
+				<div class="animated">
+					<span style="font-size: 30px; color: #1a1a1a;">
+				Gap 2014夏季系列 带你领略美式的清新一夏
+			     </span>
+				</div>
+				
+			</div>
+			<div id="centerTop1">
+
+			</div>
+			<div id="centerTop2" class="two">
+				<div class="animated">
+					<span style="font-size: 14px; color: #4c4c4c;">
+					美式休闲风格引领者盖璞(Gap)全新2014夏季系列，以迈阿密流行风情、南美丛林热情、以及全球盛事世界杯为设计灵感来源，带来柔软材质、缤纷色彩、修身廓形的全新一季完美设计。舒适，多彩，清新的夏季系列，是时尚潮人们迎接缤纷夏日各色派对，海滩之旅，音乐节等活动不可或缺的潮流选择。
+				</span>
+				</div>
+				
+			</div>
+			<div id="centerTop3" class="thr">
+				<div class="animated">
+					<img src="img/s3.jpg" />
+				</div>
+				
+			</div>
+			<div id="centerTop4" class="for">
+				<div class="animated">
+					<span style="font-size: 14px; color: #4c4c4c;">
+					Gap 2014夏季系列 带你领略美式的清新一夏
+				</span>
+				</div>
+				
+			</div>
+			<div id="centerTop5">
+
+			</div>
+			<div id="centerTop6">
+				<img src="img/h-10.jpg" style="margin:0px 0px 30px 940px;" />
+			</div>
+
+		</div>
+
+		<div id="bottom" class="a3">
+			<div class="animated">
+				<img src="img/bottom-logo.png" />
+				<div id="bottom_B">
+					<ul>
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">品牌介绍</a>
+						</li>
+						<li>
+							<a href="#">产品专区</a>
+						</li>
+						<li>
+							<a href="#">时尚资讯</a>
+						</li>
+						<li style="margin: 0;">
+							<a href="#">联系我们</a>
+						</li>
+					</ul>
+
+				</div>
+				<div id="bottom_B1">
+					<div style="color: #999; font-size: 14px;padding-top:30px ;">
+						@此网页版权所有DK公司
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+
+
+
+<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--左右滑入-->
+	<script>
+		function ani(idname, type1, type2) {
+			if(($("." + idname).offset().top - $(window).scrollTop()) < $(window).height()) {
+				$("." + idname).find("div").eq(0).addClass(type1);
+				$("." + idname).find("div").eq(1).addClass(type2);
+			};
+			$(window).scroll(function() {
+				if(($("." + idname).offset().top - $(window).scrollTop()) < $(window).height()) {
+					$("." + idname).find("div").eq(0).addClass(type1);
+					$("." + idname).find("div").eq(1).addClass(type2);
+				};
+			});
+
+		};
+		ani("one", "bounceInLeft");
+		ani("two", "bounceInRight");
+		ani("thr", "bounceInLeft");
+		ani("for", "bounceInRight");
+//		ani("fiv", "bounceInUp");
+//		ani("six", "bounceInRight");
+//		ani("a1", "fadeInDownBig", "fadeInDownBig");
+		ani("a2", "zoomInLeft", "zoomInRight");
+		ani("a3", "bounceInUp", "bounceInUp");
+	</script>
+</html>

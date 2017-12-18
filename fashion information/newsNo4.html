@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>时尚资讯4</title>
+		<link rel="stylesheet" type="text/css" href="css/newsNo4.css" />
+		<link rel="stylesheet" type="text/css" href="css/Introduction2.css" />
+	</head>
+
+	<body>
+		<div id="head">
+
+			<div id="logo">
+				<img src="img/logo.png" />
+			</div>
+			<div id="nav">
+				<ul>
+					<li>
+						<a href="../Homepage/homePage.html">首页</a>
+					</li>
+					<li>
+						<a href="../IntroducePrefecture/Introduction.html">品牌介绍</a>
+					</li>
+					<li>
+						<a href="../Product area/products_one.html">产品专区</a>
+					</li>
+					<li>
+						<a href="../fashion information/news.html">时尚资讯</a>
+					</li>
+					<li>
+						<a href="../contact us/service.html">联系我们</a>
+					</li>
+				</ul>
+			</div>
+			<div id="banner">
+				<img src="img/h-banner.jpg" />
+			</div>
+			<div class="a2" style="z-index: 999; position: absolute; top: 600px;left: 470px;">
+				<div class="animated">
+					<img src="img/h-banner-1.png"/>
+				</div>
+				
+			</div>
+
+		</div>
+		<div id="center">
+			<div id="centerTop" class="one">
+				<div class="animated">
+					<span style="font-size: 30px; color: #1a1a1a;">
+				假如巴西世界杯球鞋是香奈儿制造
+			</span>
+				</div>
+				
+			</div>
+			<div id="centerTop1">
+				<div id="centerTop2">
+                      
+				</div>
+				<div id="centerTop3" class="two">
+					<div class="animated">
+						 <img src="img/s4.jpg" style="width: 410px;height: 590px;"/>
+					</div>
+                     
+				</div>
+				<div id="centerTop4" class="thr">
+					<div class="animated">
+						<span style="font-size: 14px;color: #808080;">
+	“绿色和平”组织最近发表检验报告称，八成2014年巴西世界杯球鞋有毒，主要赞助 商为adidas、Nike及Puma。其实，球鞋非得由这些休闲品牌制造吗？假如世界杯球鞋交给奢侈品大牌来生产，冠上Chanel、LV、Prada的名字，结果会怎样？ <br /><br /> 现实中，现在各大足球赛事或者是其他体育赛事的运动鞋赞助商基本上被adidas、Nike等专业的运动品牌垄断了，原因在于专业运动品牌玩的是科技，庞大的科研团队支撑起鞋履强大的运动能力。而曾经，奢侈品牌在大众心目中就是高贵优雅，大牌秀场的鞋履都是触目惊心的“恨天高”。但随着舒适运动风的兴起，踩着15cm高的高跟鞋走T台已成为过去式，香奈儿（Chanel）、普拉达（Prada）、华伦天奴（Valentino）等高端奢侈品牌相继推出了不少运动风格的新款时尚鞋履，传递出一种用“舒适”的运动鞋去对抗“好看”恨天高的消息。
+	<br /><br />  运动鞋在奢侈品领域的流行不仅因为它是名家设计价格昂贵，更因为它的舒适耐穿。而且它不同于专业运动鞋的单调粗犷，舒适下更透露出精致活力。如果说专业运动鞋玩的是技术流，那么大牌运动鞋玩的一定是酷炫舒适的时尚风。
+</span>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="centerTop5">
+
+			</div>
+			<div id="centerTop6">
+				<img src="img/h-10.jpg" style="margin:0px 0px 30px 940px;" />
+			</div>
+
+		</div>
+		<div id="bottom" class="a3">
+			<div class="animated">
+				<img src="img/bottom-logo.png" />
+				<div id="bottom_B">
+					<ul>
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">品牌介绍</a>
+						</li>
+						<li>
+							<a href="#">产品专区</a>
+						</li>
+						<li>
+							<a href="#">时尚资讯</a>
+						</li>
+						<li style="margin: 0;">
+							<a href="#">联系我们</a>
+						</li>
+					</ul>
+
+				</div>
+				<div id="bottom_B1">
+					<div style="color: #999; font-size: 14px;padding-top:30px ;">
+						@此网页版权所有DK公司
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+
+
+
+<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--左右滑入-->
+	<script>
+		function ani(idname, type1, type2) {
+			if(($("." + idname).offset().top - $(window).scrollTop()) < $(window).height()) {
+				$("." + idname).find("div").eq(0).addClass(type1);
+				$("." + idname).find("div").eq(1).addClass(type2);
+			};
+			$(window).scroll(function() {
+				if(($("." + idname).offset().top - $(window).scrollTop()) < $(window).height()) {
+					$("." + idname).find("div").eq(0).addClass(type1);
+					$("." + idname).find("div").eq(1).addClass(type2);
+				};
+			});
+
+		};
+		ani("one", "bounceInUp");
+		ani("two", "bounceInRight");
+		ani("thr", "bounceInLeft");
+//		ani("for", "bounceInLeft");
+//		ani("fiv", "bounceInUp");
+//		ani("six", "bounceInRight");
+//		ani("a1", "fadeInDownBig", "fadeInDownBig");
+		ani("a2", "zoomInLeft", "zoomInRight");
+		ani("a3", "bounceInUp", "bounceInUp");
+	</script>
+</html>

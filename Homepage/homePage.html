@@ -5,240 +5,354 @@
 		<meta charset="UTF-8">
 		<title>DK女鞋网页</title>
 		<link rel="stylesheet" type="text/css" href="css/homePage.css" />
-	</head>
-
-	<body>
-		<!--头部盒子-->
-		<div id="header">
-			<!--logo盒子-->
-			<div id="headerLogo">
-				<img src="img/logo.png" />
-			</div>
-			<!--导航盒子-->
-			<div id="headerNav">
-				<ul id="headerNavText">
-					<li>
-						<a href="#">首页</a>
-					</li>
-					<li>
-						<a href="http://192.168.1.90/DKWomen/IntroducePrefecture/Introduction.html?__hbt=1512715738970">品牌介绍</a>
-					</li>
-					<li>
-						<a href="#">产品专区</a>
-					</li>
-					<li>
-						<a href="http://192.168.1.90/DKWomen/fashion%20information/news.html?__hbt=1512715826790">时尚资讯</a>
-					</li>
-					<li>
-						<a href="http://192.168.1.90/DKWomen/contact%20us/service.html?__hbt=1512715867604">联系我们</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!--主体区域1-->
-		<div id="mian">
-			<div id="mianBanner">
-				<img src="img/index-banner.1.jpg" />
-				<span id="dian"></span>
-				<span id="dian2"></span>
-			</div>
-			<!--主体区域2-->
-			<div id="mianBS">
-				<div id="mainBSLeft">
-					<img src="img/index-1.jpg" />
+		<script src="jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+        
+		<body>
+			<!--头部盒子-->
+			<div id="header">
+				<!--logo盒子-->
+				<div id="headerLogo">
+					<img src="img/logo.png" />
 				</div>
-
-				<div id="mainBSRight">
-					<div id="mainBSRightImg">
-						<a href="#"><img src="img/index-2.jpg" /></a>
-					</div>
-
-					<div id="mainBSRightText">
-						<ul>
-							<li>
-								<a href="">BRAND STORY</a>
-							</li><br />
-							<li>
-								<a href="#" style="font-size: 52px;font-family: '微软雅黑';">品牌故事</a>
-							</li>
-						</ul>
-
-					</div>
-
-					<div id="mainBSRightText2">
-
-						<ul id="ul">
-							<li>用艺术的伟大，重演20年的一幕幕 全齐流溢着的时光， &nbsp;&nbsp;&nbsp;&nbsp;20年的优雅</li>
-							<li>不惜，满载着艺术的造诣。 在这个秋季，新品全新上线。用艺术的伟大，</li>
-							<li>重演着20年的一幕幕，全齐流溢着的时光，20年的优雅不惜，满载艺术</li>
-							<li>的造诣。在这个秋季， 新品全新上线。用艺术的伟大，重演20年的一幕</li>
-							<li>幕， 全齐流溢着的时光， 20年的优雅不惜， 满载艺术造诣。 在这秋</li>
-							<li>季， 新品全新上线。</li>
-
-						</ul>
-
-					</div>
-
-				</div>
-
-			</div>
-
-			<!--主体区域3-->
-			<div id="mianNEW">
-				<!-- NEW ARRIVAl-->
-
-				<div id="mianNEWImg">
-					<img src="img/index-3.jpg" />
-				</div>
-				<div id="mianNEWText">
-					<ul>
-						<li>NEW ARRIVAl
-							<li>
-								<li style="margin-left: 20px;">每周三上新</li>
-								<li><img src="img/下箭头 (4).png" id="jiantou" /></li>
-
-					</ul>
-				</div>
-
-			</div>
-
-			<!--主体区域4-->
-			<div id="mianKeywords">
-				<!--本季热卖-->
-				<div id="mianKeywordsLeft">
-					<ul id="mianKeywordsText">
-						<li style="color: #000000;font-size: 26px;">本季热卖</li>
-						<li style="color:#4c4c4c;font-size:12px;">H O T S A L E I N T H I S Q U A R T E R</li>
-					</ul>
-					<div id="mianKeywordsImgLeft">
-						<img src="img/index-4.jpg" style="margin-top: 100px;" />
-					</div>
-					<div id="mianKeywordsImgRight">
-						<img src="img/index-5.jpg" />
-					</div>
-					<div id="mianKeywordsKuang"></div>
-
-				</div>
-			</div>
-			<!--主体区域5-->
-			<div id="GuessYouLike">
-				<!--猜你也喜欢-->
-				<ul>
-					<li style="margin-left: 50px;">猜你也喜欢</li>
-					<li style="font-size: 16px;color: #4c4c4c;">G U E S S Y O U L I K E T T O O</li>
-				</ul>
-			</div>
-			<!--主体区域6-->
-			<div id="GuessYouLikeShow">
-				<div id="GuessKuang">
-					<img src="img/index-6.jpg" />
-				</div>
-				<div id="GuessImg">
-					<img src="img/index-7.jpg" />
-				</div>
-
-				<div id="GuessKuangTow">
-					<img src="img/index-8.jpg" />
-				</div>
-
-			</div>
-
-			<!--主体区域7-->
-			<div id="fashion">
-				<!--流行上市-->
-				<div id="fashionText">
-					<ul>
-						<li style="color:#4d4d4d;font-size:60px;">New</li>
+				<!--导航盒子-->
+				<div id="headerNav">
+					<ul id="headerNavText">
 						<li>
-							<hr style="width: 210px;" />
+							<a href="../Homepage/homePage.html">首页</a>
 						</li>
-						<li style="color:#4d4d4d;font-size:18px;">鱼嘴鞋 / 新款上市</li>
-						<li><img src="img/dian、.png" /></li>
-						<li style="color:#595959;font-size:22px;">季度更新 &nbsp; 流行设计</li>
+						<li>
+							<a href="../IntroducePrefecture/Introduction.html">品牌介绍</a>
+						</li>
+						<li>
+							<a href="http://192.168.1.90/DKWomen/Product%20area/Products_one.html?__hbt=1513216313986">产品专区</a>
+						</li>
+						<li>
+							<a href="../fashion information/news.html">时尚资讯</a>
+						</li>
+						<li>
+							<a href="../contact us/service.html">联系我们</a>
+						</li>
 					</ul>
 				</div>
+			</div>
+			<script type="text/javascript">
+				$(function() {
+					var num = 0;
+					$("#j_silder_outer .img-item").each(function(index, el) {
+						$(this).css({
+							"left": $(this).width() * index + "px",
+							/*让每个img-item延时一定时间执行动画*/
+							"transitionDelay": index * 0.3 + "s"
+						});
+						$(this).find(".img").css({
+							"backgroundPosition": -$(this).width() * index + "px"
+						});;
+					});
 
-				<div id="fashionImg">
-					<img src="img/index-9.jpg" />
+					$(".prev").on("click", function() {
+						$("#j_silder_outer .img-item").css("transform", "rotateX(" + (++num * 90) + "deg)");
+					});
 
+					$(".next").on("click", function() {
+						$("#j_silder_outer .img-item").css("transform", "rotateX(" + (--num * 90) + "deg)");
+					});
+
+					var timejg = 4000; //轮播间隔时间
+					var time = setInterval(move, timejg);
+
+					function move() {
+						$("#j_silder_outer .img-item").css("transform", "rotateX(" + (--num * 90) + "deg)");
+					}
+					$('.slider-outer').hover(function() {
+						clearInterval(time);
+					}, function() {
+						time = setInterval(move, timejg);
+					});
+
+				})
+			</script>
+			<!--主体区域1-->
+			<div id="j_silder_outer" class="slider-outer">
+				<div id="mianBanner">
+					<div class="img-item">
+						<div class="img"></div>
+						<div class="img"></div>
+						<div class="img"></div>
+						<div class="img"></div>
+					</div>
+					<div class="img-item">
+						<div class="img"></div>
+						<div class="img"></div>
+						<div class="img"></div>
+						<div class="img"></div>
+					</div>
+					<div class="img-item">
+						<div class="img"></div>
+						<div class="img"></div>
+						<div class="img"></div>
+						<div class="img"></div>
+					</div>
+					<div class="img-item">
+						<div class="img"></div>
+						<div class="img"></div>
+						<div class="img"></div>
+						<div class="img"></div>
+					</div>
+					<div class="img-item">
+						<div class="img"></div>
+						<div class="img"></div>
+						<div class="img"></div>
+						<div class="img"></div>
+					</div>
+					<div class="btns" data-num="0">
+						<div class="prev">
+							</div>
+						<div class="next"></div>
+						</div>
+						<!--<img src="img/index-banner.1.jpg" />-->
+						<!--<span id="dian"></span>
+				<span id="dian2"></span>-->
+					</div>
+					<!--主体区域2-->
+					<div id="mianBS" >
+						<div id="mainBSLeft">
+							<img src="img/index-1.jpg" id="imge"/>
+						</div>
+						<!--js滑动效果-->
+						
+						<div id="mainBSRight">
+							<div id="mainBSRightImg">
+								<a href="
+									3http://192.168.1.90/DKWomen/Homepage/HomepageSkip/HomepageSkip.html?__hbt=1512731231752"><img src="img/index-2.jpg" /></a>
+							</div>
+
+							<div id="mainBSRightText">
+								<ul>
+									<li>
+										<a href="http://192.168.1.90/DKWomen/Homepage/HomepageSkip/HomepageSkip.html?__hbt=1512731231752">BRAND STORY</a>
+									</li><br />
+									<li>
+										<a href="http://192.168.1.90/DKWomen/Homepage/HomepageSkip/HomepageSkip.html?__hbt=1512731231752" style="font-size: 52px;font-family: '微软雅黑';">品牌故事</a>
+									</li>
+								</ul>
+
+							</div>
+
+							<div id="mainBSRightText2">
+
+								<ul id="ul">
+									<li>用艺术的伟大，重演20年的一幕幕 全齐流溢着的时光， &nbsp;&nbsp;&nbsp;&nbsp;20年的优雅</li>
+									<li>不惜，满载着艺术的造诣。 在这个秋季，新品全新上线。用艺术的伟大，</li>
+									<li>重演着20年的一幕幕，全齐流溢着的时光，20年的优雅不惜，满载艺术</li>
+									<li>的造诣。在这个秋季， 新品全新上线。用艺术的伟大，重演20年的一幕</li>
+									<li>幕， 全齐流溢着的时光， 20年的优雅不惜， 满载艺术造诣。 在这秋</li>
+									<li>季， 新品全新上线。</li>
+
+								</ul>
+
+							</div>
+
+						</div>
+
+					</div>
+					<!--滑入效果-->
+					<script type="text/javascript">
+							window.onscroll = function(event) {
+								var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+								if(scrollTop > 400 && scrollTop<1300){
+									mainBSRight.style.marginLeft = -490+'px';
+									imge.style.marginLeft = 490+'px';
+								} 
+								if(scrollTop > 1600 && scrollTop<2000){
+									img1.style.marginLeft = 515+'px';
+									img2.style.marginLeft = -300+'px';
+								} 
+								if(scrollTop > 2300){
+								
+									cnxh.style.marginLeft = -1000+'px';
+									wz.style.marginLeft = 500+'px';
+								} 
+								if(scrollTop > 2800){
+						 		imgRight1.style.marginLeft = 1000+'px';
+								imgleft.style.marginLeft = -1000+'px';
+								imgRight2.style.marginLeft = 1000+'px';
+								}
+								if(scrollTop > 4000){
+								fashionText.style.marginLeft = -800+'px';
+								fashionImg.style.marginLeft = 1000+'px';
+								fashionImgTow.style.marginLeft = -1000+'px';
+								}
+								if(scrollTop > 6100){
+								    zhu9text.style.marginLeft = -1050+'px';
+									zhu9text2.style.marginLeft = 400+'px';
+								} 
+								if(scrollTop > 6100){
+								tenImg1.style.marginLeft =500+'px';
+							    tenImg4.style.marginRight=500+'px';
+							    tenImg2.style.marginTop=500+'px';
+							    tenImg3.style.marginBottom=500+'px';
+								} 
+							
+							}
+							
+						</script>
+
+					<!--主体区域3-->
+					<div id="mianNEW">
+						<!-- NEW ARRIVAl-->
+
+						<div id="mianNEWImg">
+							<img src="img/index-3.jpg" />
+						</div>
+						<div id="mianNEWText">
+							<ul>
+								<li>NEW ARRIVAl
+									<li>
+										<li style="margin-left: 20px;">每周三上新</li>
+										<li><img src="img/下箭头 (4).png" id="jiantou" /></li>
+
+							</ul>
+						</div>
+
+					</div>
+
+					<!--主体区域4-->
+					<div id="mianKeywords">
+						<!--本季热卖-->
+						<div id="mianKeywordsLeft">
+							<ul id="mianKeywordsText">
+								<li style="color: #000000;font-size: 26px;">本季热卖</li>
+								<li style="color:#4c4c4c;font-size:12px;">H O T S A L E I N T H I S Q U A R T E R</li>
+							</ul>
+							<div id="mianKeywordsImgLeft">
+								<img src="img/index-4.jpg" style="margin-top: 100px;" id="img1"/>
+							</div>
+							<div id="mianKeywordsImgRight">
+								<img src="img/index-5.jpg" id="img2"/>
+							</div>
+							<div id="mianKeywordsKuang"></div>
+
+						</div>
+					</div>
+					<!--主体区域5-->
+					<div id="GuessYouLike">
+						<!--猜你也喜欢-->
+						<ul>
+							<li style="margin-left: 50px;" id="cnxh">猜你也喜欢</li>
+							<li style="font-size: 16px;color: #4c4c4c;" id="wz">G U E S S Y O U L I K E T T O O</li>
+						</ul>
+					</div>
+					<!--主体区域6-->
+					<div id="GuessYouLikeShow">
+						<div id="GuessKuang">
+							<img src="img/index-6.jpg" id="imgRight1" />
+						</div>
+						<div id="GuessImg">
+							<img src="img/index-7.jpg" id="imgleft"/>
+						</div>
+
+						<div id="GuessKuangTow">
+							<img src="img/index-8.jpg" id="imgRight2"/>
+						</div>
+
+					</div>
+
+					<!--主体区域7-->
+					<div id="fashion">
+						<!--流行上市-->
+						<div id="fashionText">
+							<ul>
+								<li style="color:#4d4d4d;font-size:60px;">New</li>
+								<li>
+									<hr style="width: 210px;" />
+								</li>
+								<li style="color:#4d4d4d;font-size:18px;">鱼嘴鞋 / 新款上市</li>
+								<li><img src="img/dian、.png" /></li>
+								<li style="color:#595959;font-size:22px;">季度更新 &nbsp; 流行设计</li>
+							</ul>
+						</div>
+
+						<div id="fashionImg">
+							<img src="img/index-9.jpg"  />
+
+						</div>
+
+						<div id="fashionImgTow">
+							<img src="img/index-10.jpg" />
+						</div>
+
+					</div>
+					<!--主体区域8-->
+					<div id="SHOPNEW">
+						<!--尽享品质生活-->
+						<div id="SHOPNEWBOX">
+							<img src="img/index-11.jpg" />
+							<ul>
+								<li style="font-size: 48px;">NEW A R R A V I L</li>
+								<li style="font-size: 90px;">尽 享 品 质 生 活</li><br />
+								<li style="font-size: 40px;">海 量 新 品来 袭</li><br /><br /><br />
+								<li style="font-size: 30px;">
+									<a id="text">SHOPNEW</a>
+								</li>
+
+							</ul>
+
+						</div>
+					</div>
+					<div style="width: 100%;height: 150px;">
+
+					</div>
+
+					<!--主体区域9-->
+					<div id="aestheticism">
+						<!--唯美绽放，引领时尚-->
+						<ul>
+							<li id="zhu9text" style="font-size: 26px;color: #000000;margin-left: 70px;">唯 美 绽 放 ，引 领 时 尚</li>
+							<li id="zhu9text2" style="font-size: 16px;color: #4c4c4c;">B E A U T I F U L B L O O M L E A D I N G F A S H I O N</li>
+						</ul>
+
+					</div>
+					<!--主体区域10-->
+					<div id="mainTen">
+						<img src="img/index-12.jpg" class="img1" id="tenImg1"/>
+						<img src="img/index-13.jpg" class="img2" id="tenImg2"/>
+						<img src="img/index-14.jpg" class="img3" id="tenImg3"/>
+						<img src="img/index-15.jpg" class="img4" id="tenImg4"/>
+					</div>
 				</div>
-
-				<div id="fashionImgTow">
-					<img src="img/index-10.jpg" />
-				</div>
-
-			</div>
-			<!--主体区域8-->
-			<div id="SHOPNEW">
-				<!--尽享品质生活-->
-				<div id="SHOPNEWBOX">
-					<img src="img/index-11.jpg" />
-					<ul>
-						<li style="font-size: 48px;">NEW A R R A V I L</li>
-						<li style="font-size: 90px;">尽 享 品 质 生 活</li><br />
-						<li style="font-size: 40px;">海 量 新 品来 袭</li><br /><br /><br />
-						<li style="font-size: 30px;">
-							<a id="text">SHOPNEW</a>
-						</li>
-
-					</ul>
-
-				</div>
-			</div>
-			<div style="width: 100%;height: 150px;">
-
+				<!--主体区域-->
 			</div>
 
-			<!--主体区域9-->
-			<div id="aestheticism">
-				<!--唯美绽放，引领时尚-->
-				<ul>
-					<li style="font-size: 26px;color: #000000;margin-left: 70px;">唯 美 绽 放 ，引 领 时 尚</li>
-					<li style="font-size: 16px;color: #4c4c4c;">B E A U T I F U L B L O O M L E A D I N G F A S H I O N</li>
-				</ul>
+			<!--底部区域-->
 
-			</div>
-			<!--主体区域10-->
-            <div id="mainTen">
-            	<img src="img/index-12.jpg"id="img1"/>
-            	<img src="img/index-13.jpg"id="img2"/>
-            	<img src="img/index-14.jpg"id="img3"/>
-            	<img src="img/index-15.jpg"id="img4"/>
-            </div>
-			</div><!--主体区域-->
-		</div>
-		
-		
-		<!--底部区域-->
-			
 			<div id="footer">
 				<!--logo盒子-->
-			<div id="footerLogo">
-				<img src="img/logo.png" />
+				<div id="footerLogo">
+					<img src="img/logo.png" />
+				</div>
+				<!--导航盒子-->
+				<div id="footerNav">
+					<ul id="footerNavText">
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">品牌介绍</a>
+						</li>
+						<li>
+							<a href="#">产品专区</a>
+						</li>
+						<li>
+							<a href="#">时尚资讯</a>
+						</li>
+						<li>
+							<a href="#">联系我们</a>
+						</li>
+					</ul>
+				</div>
+				<a id="copyright">@此网页版权所有DK公司</a>
 			</div>
-			<!--导航盒子-->
-			<div id="footerNav">
-				<ul id="footerNavText">
-					<li>
-						<a href="#">首页</a>
-					</li>
-					<li>
-						<a href="#">品牌介绍</a>
-					</li>
-					<li>
-						<a href="#">产品专区</a>
-					</li>
-					<li>
-						<a href="#">时尚资讯</a>
-					</li>
-					<li>
-						<a href="#">联系我们</a>
-					</li>
-				</ul>
-			</div>
-			<a id="copyright">@此网页版权所有DK公司</a>
-			</div>
-			
-	</body>
+
+		</body>
 
 </html>

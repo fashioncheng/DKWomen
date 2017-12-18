@@ -41,18 +41,21 @@ body {
 	float: left;
 	padding-top: 15px;
 	width: 100px;
-	height: 40px;
+	height: 35px;
 	text-align: center;
 	margin-right: 100px;
 }
 
 #nav a {
+	display: block;
+	width: 100px;
+	height: 40px;
 	text-decoration: none;
 	color: #999;
 	font-size: 20px;
 }
 
-#nav li:hover {
+#nav li a:hover {
 	color: #ffc001;
 	border-bottom: 3px solid #ffc001;
 }
@@ -65,7 +68,7 @@ body {
 }
 #center {
 	width: 1180px;
-	height: 2500px;
+	height: 900px;
 	margin: 0 auto;
 	/*background: yellow;*/
 	position: absolute;
@@ -80,7 +83,8 @@ body {
 #centerTop1{
 	width: 100%;
 	height: 1px;
-	background: #e5e5e5;
+	background: #E5E5E5;
+	margin-top:1px ;
 	position: absolute;
 	top: 75px;
 }
@@ -92,25 +96,16 @@ body {
 #centerTop3{
 	width: 100%;
 	height: 935px;
+	text-align: center;
 }
 #centerTop4{
 	width: 100%;
-	height: 100px;
-	/*background: palegreen;*/
-	margin-top: 50px;
-}
-#centerTop5{
-	width: 100%;
-	height: 935px;
-	text-align: center;
-}
-#centerTop6{
-	width: 100%;
-	height: 100px;
+	height: 70px;
 	/*background: palegreen;*/
 	margin-top: 40px;
+	text-align: center;
 }
-#centerTop7{
+#centerTop5{
 	width: 100%;
 	height: 1px;
 	background: #e5e5e5;
@@ -121,7 +116,7 @@ body {
 	height: 200px;
 	position: absolute;
 	background: black;
-	top: 3450px;
+	top: 2330px;
 	text-align: center;
 }
 

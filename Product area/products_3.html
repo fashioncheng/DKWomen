@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="products_two.css" />
+	</head>
+
+	<body>
+		<div class="header">
+
+			<img src="img/image/logo.png" />
+
+		</div>
+		<!--菜单-->
+		<div class="menu">
+			<ul>
+				<li>
+					<a href="../Homepage/homePage.html">首页</a>
+				</li>
+				<li>
+					<a href="../IntroducePrefecture/Introduction.html">品牌介绍</a>
+				</li>
+				<li>
+					<a id="menuText" href="../Product area/products_one.html">产品专区</a>
+				</li>
+				<li>
+					<a href="../fashion information/news.html">时尚资讯</a>
+				</li>
+				<li>
+					<a href="../contact us/service.html">联系我们</a>
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="banner">
+
+			<img id="d1" src="img/image/c-banner-1.jpg" onmouseover="stopTu()" onmouseout="startTu()">
+			<div class="bannerLi">
+
+				<ul>
+					<li id="li1" onmouseover="tingTu(1,this)" onmouseout="dongTu()">1</li>
+					<li id="li2" onmouseover="tingTu(2,this)" onmouseout="dongTu()">2</li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			window.onload = init;
+			//i表示显示的第几张图片
+			var i = 1;
+			var dingshiqi;
+
+			function init() {
+				var obj = document.getElementById("li1");
+				obj.style.background = "orange";
+				dingshiqi = window.setInterval("tupian()", 3000);
+			}
+			//让图片自动切换的函数
+			function tupian() {
+				i++;
+				if(i > 2) {
+					i = 1;
+				}
+				//获取了img对象
+				var obj = document.getElementById("d1");
+				//修改img对象的src属性
+				obj.src = "img/image/c-banner-" + i + ".jpg";
+				//再去修改li标签的背景颜色
+				ys();
+				var yanse = document.getElementById("li" + i);
+				yanse.style.background = "orange";
+			}
+			//鼠标放到图片上停止图片自动切换的函数
+			function stopTu() {
+				window.clearInterval(dingshiqi);
+			}
+			//鼠标离开图片让图片自动切换的函数
+			function startTu() {
+				dingshiqi = window.setInterval("tupian()", 3000);
+			}
+			//鼠标放到li标签上显示对应图片的函数
+			function tingTu(n, m) {
+				i = n;
+				var obj = document.getElementById("d1");
+				obj.src = "img/image/c-banner-" + n + ".jpg";
+				//把所有的li标签的背景颜色变成白色
+				ys();
+				window.clearInterval(dingshiqi);
+				m.style.background = "orange";
+			}
+			//鼠标离开li标签让图片继续自动切换
+			function dongTu() {
+				dingshiqi = window.setInterval("tupian()", 3000);
+			}
+			//清除所有标签的背景颜色
+			function ys() {
+				for(var j = 1; j <= 2; j++) {
+					var Allobj = document.getElementById("li" + j);
+					Allobj.style.background = "white";
+				}
+			}
+		</script>
+		<br />
+		<div class="nav">
+
+			<ul class="nav_ul">
+
+				<li class="nav_text">
+					<a href="#">靴子</a>
+				</li>
+				<li class="nav_text">
+					<a href="">高跟鞋</a>
+				</li>
+				<li class="nav_text">
+					<a href="">经典款</a>
+				</li>
+				<li class="nav_text">
+					<a href="">单鞋</a>
+				</li>
+
+			</ul>
+			<div class="nav_line">
+
+			</div>
+			<div class="from">
+				<form action="" method="post" ">
+						<input type="text " value=" 输入关键字 " style="width: 215px;height: 30px; border: 1px solid #808080; color: #808080 "; />
+						
+					</form>
+            	
+            	
+            </div>
+             <div  class="nav_menu ">
+             	
+             	<ul>
+             		<li><a href="# ">猫跟</a></li>
+             		<li><a href="# ">脚蹬</a></li>
+             		<li><a href="# ">粗跟鞋</a></li>
+             		<li><a href="# ">长筒式</a></li>
+             		<li><a href="# ">一字扣</a></li>
+             		<li><a href="# ">绒面式</a></li>
+             	</ul>
+             	
+             </div>
+             
+             
+			
+		</div>
+		<div class="nav_photo">
+		          <div class="photo"><img src="img/image/e-1.jpg"/><a href="">马丁靴拉链圆头</a></div>
+		         <div class="photo"><img src="img/image/e-2.jpg"/><a href="">马丁靴拉链圆头</a></div>
+		         <div class="photo"><img src="img/image/e-3.jpg"/><a href="">马丁靴拉链圆头</a></div>
+		         <div class="photo"><img src="img/image/e-4.jpg"/><a href="">马丁靴拉链圆头</a></div>
+		         <div class="photo"><img src="img/image/e-5.jpg"/><a href="">马丁靴拉链圆头</a></div>
+		         <div class="photo"><img src="img/image/e-6.jpg"/><a href="">马丁靴拉链圆头</a></div>
+		          <div class="photo"><img src="img/image/e-7.jpg"/><a href="">马丁靴拉链圆头</a></div>
+		         <div class="photo"><img src="img/image/e-8.jpg"/><a href="">马丁靴拉链圆头</a></div>
+		         <div class="photo"><img src="img/image/e-9.jpg"/><a href="">马丁靴拉链圆头</a></div>
+		          <div class="photo"><img src="img/image/e-10.jpg"/><a href="">马丁靴拉链圆头</a></div>
+		           <div class="photo"><img src="img/image/e-11.jpg"/><a href="">马丁靴拉链圆头</a></div>
+		            <div class="photo"><img src="img/image/e-12.jpg"/><a href="">马丁靴拉链圆头</a></div>
+		           
+		 
+			
+			
+			
+			
+			
+		</div>
+		
+		
+		
+		<div class="more">
+			<img src="img/image/d-more.png"/>
+			<a href="#">+&nbsp;&nbsp;加载更多</a>
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		<div id="footer">
+			<!--logo盒子-->
+			<div id="footerLogo">
+				<img src="img/image/logo.png" />
+			</div>
+			<!--导航盒子-->
+			<div id="footerNav">
+				<ul id="footerNavText">
+					<li>
+						<a href="#">首页</a>
+					</li>
+					<li>
+						<a href="#">品牌介绍</a>
+					</li>
+					<li>
+						<a href="#">产品专区</a>
+					</li>
+					<li>
+						<a href="#">时尚资讯</a>
+					</li>
+					<li>
+						<a href="#">联系我们</a>
+					</li>
+				</ul>
+			</div>
+			<div class="foot_line">
+
+			</div>
+			<a id="copyright">@此网页版权所有DK公司</a>
+		</div>
+	</body>
+
+</html>
